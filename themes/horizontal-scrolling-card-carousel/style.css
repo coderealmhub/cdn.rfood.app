@@ -1,0 +1,28 @@
+.wrapper {
+  padding: 1.5em 3em;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  height: 20em;
+  width: 100%;
+  padding: 0 1em;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  height: 14em;
+  width: 10em;
+  margin-right: 2em;
+  border-radius: 0.5em;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 18px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 18px 18px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*ocultar scroll horizontal*/
+::-webkit-scrollbar {
+    width: 0px;
+}

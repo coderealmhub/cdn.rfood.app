@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 1.25rem 3.5rem;
+  border-radius: 0.5rem;
+  margin: 2.5rem auto;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #888;
+  transition: all 0.3s ease;
+  outline: 0;
+}
+.button:hover {
+  transform: translateY(-4px);
+}
+.button:active {
+  transform: translateY(1px);
+}
+
+.bottom-sheet-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-out;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+}
+
+.bottom-sheet {
+  position: relative;
+  background-color: #fff;
+  position: relative;
+  max-width: 42rem;
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+  border: 1px solid #dee2ee;
+  transform: translateY(100%);
+  transition: all 0.3s ease-out;
+}
+.bottom-sheet-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #dee2ee;
+}
+.bottom-sheet-body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.bottom-sheet-body .content > * {
+  border-bottom: 1px solid #dee2ee;
+  padding: 1.75rem 0;
+  margin: 0;
+}
+.bottom-sheet .close-button {
+  border: 0;
+  cursor: pointer;
+  padding: 1rem;
+  margin-left: -1rem;
+  display: flex;
+  align-items: center;
+  background: none;
+  outline: 0;
+}
+.bottom-sheet .close-button svg {
+  width: 1.25rem;
+}
+
+.show-bottom-sheet {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.show-bottom-sheet .bottom-sheet {
+  transform: translateY(0);
+}

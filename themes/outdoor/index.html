@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JS Slider Background Slideshow Example</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="slider" class="slider">
+		<div class="slider-item active" style="background-image: url(https://source.unsplash.com/aiBYhrzsQw4/1920x1200)"></div>
+		<div class="slider-item" style="background-image: url(https://source.unsplash.com/V5Owjg-ZNto/1920x1200)"></div>
+		<div class="slider-item" style="background-image: url(https://source.unsplash.com/s1ihVBg5tbI/1920x1200)"></div>
+		<div class="slider-item" style="background-image: url(https://source.unsplash.com/Z_t6gnbLmXA/1920x1200)"></div>
+		<div class="slider-item" style="background-image: url(https://source.unsplash.com/e3OUQGT9bWU/1920x1200)"></div>
+		<div class="slider-panel">
+			<div class="slider-panel__navigation">
+				<i class="fas fa-circle indicator active" data-slide-to="0"></i>
+				<i class="far fa-circle indicator" data-slide-to="1"></i>
+				<i class="far fa-circle indicator" data-slide-to="2"></i>
+				<i class="far fa-circle indicator" data-slide-to="3"></i>
+				<i class="far fa-circle indicator" data-slide-to="4"></i>
+			</div>
+			<div class="slider-panel__controls">
+				<i class="far fa-arrow-alt-circle-left" id="previous"></i>
+				<i class="far fa-pause-circle" id="pause-play"></i>
+				<i class="far fa-arrow-alt-circle-right" id="next"></i>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/main.js"></script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

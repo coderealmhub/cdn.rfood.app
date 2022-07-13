@@ -1,0 +1,290 @@
+:root {
+  --main-color: #f06292;
+  --accent-color: #ef6938;
+  --black: #1a1a1a;
+  --alana-radius: 10px;
+}
+
+.alana-chat-radius {
+  border-radius: var(--alana-radius);
+}
+
+.alana-chat-shadow {
+  box-shadow: 0px 0px 10px 1px #ddd;
+}
+
+#alana-chat-box {
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+  border: 1px solid var(--main-color);
+  margin: 15px;
+}
+
+#alana-chat-box * {
+  box-sizing: border-box;
+}
+
+#alana-chat-header {
+  color: var(--black);
+  background-color: var(--main-color);
+  height: 40px;
+  padding: 10px;
+  border-radius: var(--alana-radius) var(--alana-radius) 0 0;
+}
+
+#alana-chat-header>img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+#alana-chat-title {
+  vertical-align: top;
+  font-size: 1.2em;
+}
+
+#alana-chat-close {
+  position: relative;
+  float: right;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+#alana-chat-close-icon {
+  color: #000;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px;
+  transition: all 400ms ease;
+}
+
+#alana-chat-close:hover #alana-chat-close-icon {
+  color: white;
+}
+
+#alana-chat-close-icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+}
+
+#alana-chat-close-icon:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(45deg);
+}
+
+#alana-chat-content {
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 220px;
+}
+
+.alana-chat-row {
+  clear: both;
+  width: 100%;
+}
+
+.alana-chat-message {
+  word-break: break-all;
+  border: 1px solid var(--black);
+  padding: 10px;
+  display: inline-block;
+  max-width: 200px;
+}
+
+.alana-chat-question {
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+  border-radius: var(--alana-radius) var(--alana-radius) 0 var(--alana-radius);
+}
+
+.alana-chat-question:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: var(--black);
+  border-right: 0;
+  border-bottom: 0;
+  margin-bottom: -1px;
+  margin-right: -8px;
+}
+
+.alana-chat-question-img {
+  float: right;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.alana-chat-answer {
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+  border-radius: var(--alana-radius) var(--alana-radius) var(--alana-radius) 0;
+}
+
+.alana-chat-answer:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: var(--black);
+  border-left: 0;
+  border-bottom: 0;
+  margin-bottom: -1px;
+  margin-left: -8px;
+}
+
+.alana-chat-answer-img {
+  float: left;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.alana-chat-quick-replies {
+  clear: both;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.alana-chat-quick-replies>button {
+  margin: 10px 0 0 5px;
+  word-break: break-all;
+}
+
+.alana-chat-options {
+  clear: both;
+  border: 1px solid #ccc/*var(--black)*/
+  ;
+  margin: 00px 0;
+  text-align: center;
+}
+
+.alana-chat-options-text {
+  padding: 10px;
+  border-bottom: 1px solid var(--black);
+  word-break: break-all;
+  background-color: #eee;
+  border-radius: var(--alana-radius) var(--alana-radius) 0 0;
+}
+
+.alana-chat-option {
+  display: block;
+  padding: 15px 10px;
+  color: var(--accent-color);
+  cursor: pointer;
+  text-align: center;
+  transition: all 400ms ease;
+}
+
+.alana-chat-option+.alana-chat-option {
+  border-top: 1px solid #ddd;
+}
+
+.alana-chat-option:hover {
+  color: var(--black);
+}
+
+.alana-chat-generic {
+  clear: both;
+  margin: 20px auto;
+}
+
+.alana-chat-generic>img {
+  width: 100%;
+}
+
+.alana-chat-generic>p {
+  padding: 0 10px;
+}
+
+.alana-chat-generic-title {
+  font-weight: bold;
+}
+
+.alana-chat-generic-subtitle+.alana-chat-option {
+  border-top: 1px solid #ddd;
+}
+
+#alana-chat-input-box {
+  padding: 10px;
+  position: relative;
+}
+
+#alana-chat-input {
+  border: 1px solid black;
+  padding: 10px;
+  width: 180px;
+}
+
+#alana-chat-submit {
+  width: 100px;
+  margin-left: 10px;
+  position: relative;
+  transition: all 400ms ease;
+}
+
+#alana-chat-submit:hover {
+  padding-left: 30px;
+}
+
+#alana-chat-submit>.alana-chat-check-icon {
+  left: 10px;
+  top: 8px
+}
+
+#alana-chat-submit {
+  border-color: var(--accent-color);
+}
+
+#alana-chat-submit:hover>.alana-chat-check-icon {
+  border-bottom: solid 1px var(--accent-color);
+  border-left: solid 1px var(--accent-color);
+}
+
+.alana-chat-button {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.alana-chat-button:hover {
+  color: var(--black);
+  border-color: var(--black);
+  transition: all 400ms ease;
+}
+
+.alana-chat-check-icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 4px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 1px white;
+  border-left: solid 1px white;
+  transform: rotate(-45deg);
+  transition: all 400ms ease;
+}

@@ -1,0 +1,17 @@
+.cart {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 0px;
+    border-top: 0px solid #E8E8E8;
+    border-bottom: 0px;
+    background-color: #F16538;
+    font-weight: bold;
+    font-size: large;
+    z-index: 10;
+}

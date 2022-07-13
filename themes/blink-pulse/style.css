@@ -1,0 +1,30 @@
+.blink-container {
+  width: 25px;
+  height: 25px;
+  display: block;
+  /* position: absolute; */
+  position: center;
+  top: 20px;    /*change this*/
+  left: 100px;  /*change this*/
+}
+.blink-dot {
+  border-radius: 50%;
+  background-color: #FF6600;
+  width: 10px;
+  height: 10px;
+}
+.blink-pulse {
+  background-color: #FF6600;
+  opacity: 0.75;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: scale(1);
+  animation: blink-pulse-anim 1s infinite;
+}
+
+@keyframes blink-pulse-anim {
+  0% { opacity: 0.75; transform: scale(1)}
+  100% { opacity: 0; transform: scale(4)}
+}
